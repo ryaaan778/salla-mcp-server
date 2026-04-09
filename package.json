@@ -1,6 +1,7 @@
 {
-  "name": "mcp-boilerplate",
-  "version": "0.0.1",
+  "name": "salla-mcp-server",
+  "version": "1.0.0",
+  "description": "Salla E-commerce MCP Server for AI Assistants",
   "private": true,
   "scripts": {
     "deploy": "wrangler deploy",
