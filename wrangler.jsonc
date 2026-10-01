@@ -19,7 +19,28 @@
 			"tag": "v1"
 		}
 	,
-	"durable_objects": {
+	"durable_objects": {{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "salla-mcp-server",
+  "main": "src/index.ts",
+  "compatibility_date": "2025-03-10",
+  "compatibility_flags": ["nodejs_compat"],
+  "migrations": [{"new_sqlite_classes": ["SallaMCP"], "tag": "v1"}],
+  "durable_objects": {"bindings": [{"class_name": "SallaMCP", "name": "MCP_OBJECT"}]},
+  "kv_namespaces": [
+    {"binding": "OAUTH_KV", "id": "8f18b83e5a9b4497ea0f164c53d84f511"},
+    {"binding": "TOKENS", "id": "7819b25651744c2fbc8d8af6cc33b07e"}
+  ],
+  "observability": {"enabled": true},
+  "vars": {
+    "SALLA_CLIENT_ID": "bd955454-096e-4ddf-9295-c789394575e3",
+    "SALLA_BASE_URL": "https://api.salla.dev/admin/v2",
+    "SALLA_AUTH_URL": "https://accounts.salla.sa/oauth2/auth",
+    "SALLA_TOKEN_URL": "https://accounts.salla.sa/oauth2/token",
+    "WORKER_URL": "REPLACE_AFTER_FIRST_DEPLOY"
+  }
+}
+
 		"bindings": [
 			{
 				"class_name": "SallaMCP",
