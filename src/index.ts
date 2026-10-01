@@ -1,6 +1,7 @@
 import OAuthProvider from "@cloudflare/workers-oauth-provider";
 import { SallaHandler } from "./auth/salla-handler";
-import { McpServer, McpAgent } from "@modelcontextprotocol/sdk";
+import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
+import { McpAgent } from "agents/mcp";
 import * as tools from './tools';
 
 // Define our MCP agent with tools
