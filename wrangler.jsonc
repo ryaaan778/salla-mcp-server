@@ -34,7 +34,7 @@
   "kv_namespaces": [
     {
       "binding": "OAUTH_KV",
-      "id": "8f18b83e5a9b4497ea0f164c53d84f511"
+      "id": "8f18b83e5a9b4497acf164c53d84f511"
     },
     {
       "binding": "TOKENS",
