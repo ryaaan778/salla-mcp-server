@@ -13,7 +13,8 @@
 	"migrations": [
 		{
 			"new_sqlite_classes": [
-				"BoilerplateMCP"
+  "SallaMCP"
+]
 			],
 			"tag": "v1"
 		}
@@ -21,7 +22,7 @@
 	"durable_objects": {
 		"bindings": [
 			{
-				"class_name": "BoilerplateMCP",
+				"class_name": "SallaMCP",
 				"name": "MCP_OBJECT"
 			}
 		]
