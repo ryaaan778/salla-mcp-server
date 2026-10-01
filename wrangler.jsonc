@@ -29,13 +29,11 @@
     "kv_namespaces": [
         {
             "binding": "OAUTH_KV",
-            "id": "e830ce464d78450984437699e3e0537c",
-            "preview_id": "5902d3e9defb47088c1ce1c4f7f7a629"
+            "id": "8f18b83e5a9b4497ea0f164c53d84f511",
         },
         {
             "binding": "TOKENS",
-            "id": "259c8ecbab5a49a8be8a230aabbc09f5",
-            "preview_id": "a92b9e9d7ed44c5db35a3ca4e3f59aa2"
+            "id": "7819b25651744c2fbc8d8af6cc33b07e",
         }
     ],
 	"observability": {
@@ -59,11 +57,11 @@
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
 	 */
 	 "vars": {
-        "SALLA_CLIENT_ID": "464b80ee-d535-469d-a3f1-0b28a4dcd729",
+        "SALLA_CLIENT_ID": "bd955454-096e-4ddf-9295-c789394575e3",
         "SALLA_BASE_URL": "https://api.salla.dev/admin/v2",
         "SALLA_AUTH_URL": "https://accounts.salla.sa/oauth2/auth",
         "SALLA_TOKEN_URL": "https://accounts.salla.sa/oauth2/token",
-        "WORKER_URL": "https://salla-mcp-server.inlustris.workers.dev"
+        "WORKER_URL": "REPLACE_AFTER_FIRST_DEPLOY"
     },
 	/**
 	 * Note: Use secrets to store sensitive data.
